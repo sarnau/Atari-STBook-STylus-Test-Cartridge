@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name STBookDiagnosticTest)(type KiCad)(uri "/Users/sarnau/GitHub/Atari STBook:STylus Test Cartridge/STBookDiagnosticTest")(options "")(descr ""))
+)
