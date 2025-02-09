@@ -1,0 +1,566 @@
+Advanced Hard Disk Utilities
+
+ADVANCED HARD DISK UTILITIES
+
+This appendix contains information about the Atari Advanced Hard Disk 
+Utilities disk. It applies to both the internal SCSI and external 
+SCSI or ACSI hard disk drives. This disk contains programs and files 
+that allow you to:
+
+ù Park and Unpark the read/write heads
+ù Install or remove the hard disk driver file
+ù Format and partition the hard disk
+ù Erase the contents of a logical drive
+ù Extend the system-wide folder limit
+ù Mark bad sectors
+ù Create an Extended Partition Scheme
+
+You will not use these programs as part of the hard disk's daily 
+operation. Instead, the programs allow you to start the drive for the 
+first time, perform functions that are required from time to time, or 
+maximize your use of the hard disk drive. This chapter will help you
+choose the programs and utilities you need. 
+
+
+PARKING AND UNPARKING THE READ/WRITE HEADS
+
+Whenever you move your computer, you should park the hard drive heads 
+to prevent damage to the hard disk and the data it contains. Parking 
+the hard disk drive heads moves the read/write heads of the drive
+away from the disk media. Parked heads cannot damage the disk 
+media during moving or shipping. The Atari Advanced Hard Disk 
+Utilities include two types of head parking programs. One type parks 
+the disk heads of all hard drives connected to your system. The other 
+parks the disk heads of individual units. 
+
+Warning: If you fail to close all hard disk windows before parking 
+the drive heads you may damage data on your hard disk.  
+
+Parking Drive Heads on all Units
+
+To park the hard disk drive heads on all hard disks connected to your 
+system, run SHIP.PRG. You must run this program from a floppy disk in 
+drive A or B.
+
+Note: SHIP.PRG will not park the heads of a Megafile 44 Removable 
+Hard Disk Drive.
+
+With a directory of the Atari Advanced Hard Disk Utilities disk 
+displaying, follow these instructions to run SHIP.PRG.
+
+1. Open the HDX folder. 
+
+2. Close all other open windows.
+
+3. Run SHIP.PRG. 
+
+4. Switch off your hard disk units as soon as the desktop appears.
+
+
+Parking Drive Heads on Selected Units
+
+To park a specific hard drive, you must select a physical unit to be 
+parked. With your hard disk utilities disk in drive A or B, follow 
+these instructions to park the heads on individual physical units:
+
+1. Run the HDX program. 
+
+2. Close all other open windows.
+
+3. Select the Ship option on the Disk menu.
+
+4. A dialog box displays, asking you if the hard disk drive to be 
+formatted is an ACSI drive or a SCSI drive. Select the appropriate 
+drive type. Click on OK to continue.
+
+5. When the Select physical unit(s) dialog box appears, select the 
+physical units that are to have their heads parked. Select OK.  Note:
+You can select any physical unit connected to your system (formatted 
+or not). The unit number boxes of connected devices appear shadowed.
+
+5. An alert box message appears on screen offering you a last chance 
+to cancel the head parking procedure.
+
+Select OK to park the heads.
+
+6. A final alert box appears, instructing you to turn off your hard 
+disk.
+
+Select OK and switch off the power to your disk drive(s). 
+
+Note: If you are preparing to move your entire system, switch off 
+your computer at this time.
+
+Unparking the Drive Heads
+
+The next time you start your system the drive heads are automatically 
+unparked.
+
+
+INSTALLING AND REMOVING THE HARD DISK DRIVER FILE
+
+The HINSTALL.PRG program installs or removes the hard disk driver 
+file. The hard disk driver allows you to start your system from your 
+hard drive. <<<You should always use HINSTALL.PRG when installing a 
+new version of the hard disk driver.>>>
+
+
+Installing the Hard Disk Driver
+
+Display the directory of the HINSTALL folder. Follow these steps to 
+install the hard disk driver:
+
+1. Run HINSTALL.PRG.
+
+2. Select Install from the File menu.
+
+3. Select a logical drive for the operation. You can only select 
+logical drives that are highlighted in shadowed boxes. Select OK.
+
+4. From the displayed dialog box, select OK to install the driver, or 
+Cancel to abort the operation.
+
+
+Removing the Hard Disk Driver
+
+Display the directory of the HINSTALL folder. Follow these steps to 
+remove the hard disk driver:
+
+1. Run HINSTALL.PRG.
+
+2. Select Remove from the File menu.
+
+3. Select a logical drive for the operation. You can only select 
+logical drives that are highlighted in shadowed boxes. Select OK.
+
+4. From the displayed dialog box, select OK to install the driver, or 
+Cancel to abort the operation.
+
+
+Bypassing the Hard Disk Driver
+
+As an alternative to removing the hard disk driver, you can simply 
+bypass the driver. To do so, switch off your computer (or perform a 
+keyboard coldboot) and make sure there is a floppy disk in drive 
+
+A that does not contain a hard disk driver file. Switch on the 
+system. The drive light comes on, and then goes off. Immediately hold 
+down [Alternate]. Release [Alternate] when the floppy drive's busy 
+light goes back on.
+
+
+FORMATTING AND PARTITIONING THE HARD DISK
+
+Warning: The HDX Format and Partition options described in this 
+chapter completely erase all data on your hard disk. Back up all of 
+your valuable files before proceeding.
+
+Formatting
+
+You will probably never have to re-format your hard disk. The hard 
+disk has already been formatted at the factory. Formatting the hard 
+disk creates magnetic patterns called tracks and sectors. The process 
+also marks and logs bad sectors, areas on the disk with surface 
+damage or other imperfections. Data stored in these areas could be 
+corrupted or lost. During hard disk operations, the computer avoids
+sectors marked and logged as bad.  The formatting process also 
+automatically divides the hard disk into storage areas called 
+partitions or logical drives. 
+
+The internal hard disk drive is already formatted. Formatting erases 
+all information from a disk and prepares the disk to accept data. You 
+may need to format the hard disk if the factory format becomes 
+erased due to mishandling or if the hard disk develops bad sectors.
+
+Display the directory the HDX folder. Follow these instructions to 
+format a hard disk:
+
+1. Select HDX.PRG. Then select the Format option from the Disk menu.
+
+2. Read the alert message that appears on screen. If necessary, back 
+up all your data  before proceeding.
+
+Select OK to continue.
+
+3. A dialog box displays, asking you if the hard disk drive to be 
+formatted is an ACSI drive or a SCSI drive. Select the appropriate 
+drive type.
+
+Select OK to continue.
+
+4. Select a physical unit (hard disk drive) for formatting. If you 
+are formatting only the internal hard disk, select UNIT 0.  If you 
+are formatting an additional hard disk, select a unit that corresponds
+to the hard disk's DIP switch settings. (See your hard disk drive 
+owner's manual for information about DIP switch settings.) Units in 
+shadowed boxes are the units that are connected to your system.
+
+
+Select OK to continue. A dialog box may appear, displaying a list of 
+hard disk unit types.
+
+5. Select the hard disk type showing your drive's model name. 
+
+Select OK to continue. 
+
+5. Read the alert message that appears on screen. 
+
+Select OK to format the unit.  A message appears informing you that 
+formatting is in progress.
+
+Note: When the partitioning message disappears, the formatting 
+operation is complete.  When formatting is complete, the Format option
+automatically initiates the Markbad and Partitioning options. To find 
+out more about these functions, refer to the sections on Marking Bad 
+Sectors and Partitioning. 
+
+The default partition quantity and size is determined by the hard 
+disk drive model. 
+
+Partitioning
+
+The TT's internal hard disk drive is already partitioned. 
+Partitioning a hard disk is a process that divides the disk into 
+sections. Setting a partition size tells the hard drive how much 
+storage capacity to assign to each partition. You can use the 
+factory-set partition capacities or change the storage capacity of
+each partition to suit your file organization needs.
+
+Partitioning divides your physical hard disk into data storage areas 
+called logical drives. Each logical drive is pre-installed and will 
+automatically appear on your desktop unless you re-partition the 
+disk. Partitioning allows you to store and access your data
+efficiently by allowing you to group files and folders in different 
+logical drives.
+
+Use the Partition option to create partitions in sizes best suited to 
+your disk storage needs. The Partition option lets you use an editing 
+menu to set the size of each partition or select a suggested
+partitioning scheme without having to reformat your disk.
+
+Note: When you repartition your hard disk, you must use the Install 
+Devices command to install desktop icons for the logical drives.
+
+
+Selecting a Unit to Partition
+
+Display a directory the HDX folder. Follow these instructions to 
+partition a hard disk:
+
+1. Select HDX.PRG from the HDX folder. Then select the Partition 
+option from the Disk menu.
+
+2. A dialog box displays, asking you if the hard disk drive to be 
+formatted is an ACSI drive or a SCSI drive. Select the appropriate 
+drive type.
+
+Select OK to continue. The Select a physical unit dialog box displays.
+
+3. Select a physical unit for partitioning. To partition your hard 
+disk, select the unit number of the device you want to partition. 
+Only units in shadowed boxes can be selected.
+
+Select OK to continue.
+
+4. Select a partitioning scheme.
+
+There are two ways to select a partitioning scheme. You can use the 
+Choose a Partition Scheme dialog box to choose from preset 
+partitioning schemes. Or you can use the Edit Partition Scheme dialog 
+box to create a customized partitioning scheme. The following sections 
+fully describe each method.
+
+
+Selecting a Partitioning Scheme
+
+After you select a physical unit for partitioning, the Edit Partition 
+Scheme dialog box displays. 
+
+Use the Edit Partition Scheme dialog box to create a customized 
+partitioning scheme. If you wish to select a preset partitioning 
+scheme, click on Menu to display the Choose a Partition Scheme dialog 
+box. From the Choose a Partition Scheme dialog box you can click on 
+the Edit box to return to the Edit Partition Scheme dialog box. 
+
+Creating a Customized Partitioning Scheme
+
+The Edit Partition Scheme dialog box displays information about the 
+selected unit's current partition scheme. 
+
+
+Information lines appear at the top of the dialog box. The Total line 
+displays the current total number of partitions. The Left line 
+displays the number of megabytes on your disk that have not yet been 
+assigned to any partition.
+
+Each partition's size is displayed to the right of the partition 
+number in the edit box. Minimum partition size is 1 megabyte. Maximum 
+partition size is determined by the capacity of your hard disk. You 
+can allocate all of the memory on your hard disk to one partition. 
+For example, a 40 megabyte hard disk can have a single partition 
+containing all 40 megabytes of memory.
+
+Use the scroll bar to scroll through partition boxes. To view the 28 
+partitions you can click on the  shaded area of the scroll bar to 
+scroll through four partitions at a time.  
+
+Click on the partition box you wish to create or edit. Then click on 
+the up and down arrows to the right of the partition size box to 
+increase or decrease partition size. Clicking on an Unused box 
+creates a new partition. 
+
+Note: There must be available bytes listed on the Left line before 
+you can increase the size of any partition. 1 megabyte or more must 
+appear in the Left box before an unused partition can be activated.
+
+You can select Menu to display the Choose a Partition Scheme dialog 
+box. This dialog box allows you to choose preselected partitioning 
+schemes.
+
+To return to the most recent partition scheme, select Undo.
+
+OK initiates the partitioning process. 
+
+If you want to return to the HDX.PRG main menu, select Undo.
+
+The Expert option is shaded and cannot be selected unless you have 
+more than four partitions. You need to use the Expert option only if 
+you plan to use more than one operating system. If you are planning 
+to use more than one operating system with the same hard disk, see
+Appendix E, Extended Partition Schemes. 
+
+
+Selecting a Preset Partitioning Scheme
+
+The Choose a Partition Scheme dialog box appears when you select Menu 
+from the Edit Partition Scheme dialog box. 
+
+
+The Choose a Partition Scheme dialog box provides a list of suggested 
+partitioning schemes. Select the scheme you want from the list. 
+Select Edit to return to the Edit Partition Scheme box.
+
+After you select a partitioning scheme, select OK to partition the disk.
+
+ERASING THE CONTENTS OF A LOGICAL DRIVE
+
+You can erase all data from a selected logical drive with the Zero 
+option of the HDX program. Erasing (or zeroing) a logical drive is 
+useful if you want to clear the drive to make room for new data or
+if you want to erase damaged data from a logical drive without 
+reformatting (and thus erasing) the entire hard disk.
+
+Display a directory of the HDX folder. Follow these steps to erase 
+the contents of a logical drive.
+
+1.	Select HDX.PRG. Then select the Zero option from the Disk menu.
+
+2.	Read the alert box that appears on screen. Select OK to continue.
+
+3.	Select a drive for zeroing from the Select the Logical Drive 
+dialog box. Select OK to continue.
+
+4.	An alert box appears giving you a final chance to quit the 
+program before proceeding. 
+
+Select OK to continue.
+
+
+EXTENDING THE SYSTEM WIDE FOLDER LIMIT
+
+You can run FOLDER100.PRG to extend the number of folders your system 
+recognizes. Though most users will be able to create as many folders 
+as they wish without problems, you can still use FOLDR100.PRG
+to extend the folder limit even further.
+
+To use this program, display the AUTO folder directory on drive C 
+containing the FOLDR100.PRG file. Then change the 100 in the filename 
+to any value between 001 and 999 using the Show Info option from 
+the File menu. The value you enter is the number of folders beyond 
+40 you can now access. For example, to extend the limit to 240 
+folders, you would change the filename to FOLDR240.PRG.
+
+The FOLDR program must be stored in the AUTO folder of the startup 
+disk (partition C on the hard disk if physical unit 0 is the startup 
+disk).
+
+The new folder limit takes effect when you reboot your system. During 
+the boot procedure, a message appears that shows how many extra 
+folders you have designated and how many bytes of RAM are allocated 
+to the extra folders. Each folder uses 132 bytes of RAM.
+
+
+MARKING BAD SECTORS
+
+Error messages stating that the data on your disk may be damaged 
+might indicate the presence of bad sectors on your disk. If such 
+error messages frequently appear, you should check your hard disk for 
+bad sectors. This process identifies and flags defective areas on the 
+hard disk. Hard disks may develop defective spots after the drive has 
+been in use. Once these spots have been logged with Markbad,
+they will not be used for your hard disk operations.
+
+The Atari Advanced Hard Disk Utilities disk includes two versions of 
+Markbad. One version is run automatically during the HDX Format 
+option. This version operates on the entire selected physical unit 
+and erases all data on the disk during formatting. The other version 
+operates on the selected logical drive when you run the HDX Markbad 
+option. This version helps you preserve data by letting you 
+decide whether or not to erase data containing bad sectors.
+
+Both versions of Markbad display a log of any bad sectors found. The 
+cumulative tally of bad sectors in the log appears during subsequent 
+Markbad operations.
+
+Note: You can use the HDX Markbad option on hard disks formatted with 
+a previous version of HDX.  Display the directory of the HDX folder. 
+Follow these steps to mark bad sectors on selected logical drives:
+
+1. Select HDX.PRG. Then select the Markbad option from the Disk menu.
+
+2. Select a logical drive from the Select the Logical Drive dialog box.
+
+Select OK to continue.
+
+3. While Markbad scans the logical drive for bad sectors, a message 
+appears telling you that the program is marking bad sectors. If bad 
+sectors are found in a file, select a course of action for the 
+file from the Logical Drive Markbad dialog box. This box displays the 
+name of the file, the address location of the bad sector and cluster 
+in the logical drive, and your choices for a course of action.
+
+Note: The Logical Drive Markbad dialog appears only when Markbad 
+flags bad sectors in allocated clusters. An allocated cluster is a 
+cluster that has been assigned to a file. 
+
+
+Select Delete File to erase the file or Skip Over Bad Sector to 
+preserve the undamaged portions of the file. Select Ignore Bad 
+Sector to leave the file unchanged. (Select Ignore Bad Sector if you 
+want to examine the file before taking action.)
+
+If bad sectors are found in a subdirectory file, select a course of 
+action for the subdirectory from the Logical Drive Markbad box. This 
+box displays the name of the subdirectory, its address location, and 
+your choices for a course of action.
+
+Select Delete Directory Only to delete the directory structure and 
+save the deleted directory files to the root directory. All files 
+saved to the root directory will be named "TMPnnnn"  where "nnnn" 
+stands for the starting hexadecimal cluster address of the file. 
+
+Select Delete Directory And Files to delete the directory structure 
+and all of its files. Select Ignore Bad Sector if you don't want to
+take any action at all.
+
+Note: If a bad sector is found in a lost cluster, an alert box 
+appears giving you the option of marking the cluster. A lost cluster 
+is a segment of data that is unaccounted for and inaccessible to the
+system.
+
+5. When Markbad finishes scanning the disk, a Logical Drive Markbad 
+tally box with the total count of newly found bad sectors and the 
+count of all previously found bad sectors appears.
+
+ORGANIZING AND MAINTAINING YOUR HARD DISK
+
+The larger storage capacity of a hard disk means that careful folder 
+and file organization is more important than ever. When planning and 
+using your folder structure, keep the following tips in mind.
+
+ù Use folder names that describe the types of files in the folders. 
+Keep files organized in folders so you can easily find them.  
+ù Keep as few files as possible in the root directory.  
+ù Keep the files you use most often in the first level of directories.  
+ù Delete unneeded files to free up disk space for new files.
+
+Backing Up the Hard Disk
+
+It is important to frequently back up your hard disk data. Otherwise, 
+accidentally deleted or damaged files will be lost forever. As a 
+general rule, it is good practice to back up new or modified files 
+after each session at your computer.
+
+To back up your data, regularly copy important files or folders onto 
+floppy disks and store them in a safe place. In addition to the copy 
+option, you can use one of the many hard disk backup programs 
+available through your Atari dealer or Atari user groups (see 
+Customer Support).
+
+Optimizer Programs
+
+An optimizer program checks the structure of your hard disk and 
+rearranges files and free space on the disk. The multiple sectors of 
+each file are grouped together. Contiguous free space is placed 
+either at the top of the disk (to increase the speed of writing new 
+files to the disk) or at the bottom of the disk (to increase the 
+speed of accessing existing files). Back up your data, then use a file
+optimizer program regularly to increase the speed and efficiency of 
+your hard disk drive and to reduce the possibility of data corruption 
+and loss. 
+
+Use one of the many hard disk optimizer programs available through 
+your Atari dealer or Atari user groups (see Customer Support).
+
+
+EXTENDED PARTITION SCHEMES
+
+Creating an extended partition scheme is an option for advanced 
+users. You will probably never need to use this option in the normal 
+operation of your computer. 
+
+There are four slots on your hard disk that keep track of partition 
+information. You can fill each slot with a standard partition, and 
+have each partition represented on your desktop by a logical drive.
+Or you can fill one of the four slots with an extended partition to 
+obtain more than four logical drives.
+
+An extended partition is subdivided into more than one partition. 
+This allows you to have more than one logical drive representing that 
+slot. 
+
+Note: To store system startup data the first partition must be a 
+standard partition. This partition is always assigned to the first 
+slot. You cannot select the first slot to contain the extended parti
+tion. You must use one of the three remaining slots to contain your 
+extended partition.  
+
+Supporting TOS as your primary operating system, HDX.PRG will 
+automatically choose slot number two to contain your extended 
+partition.  However, if you plan to use more than one operating 
+system, it may be useful to choose the specifics of the partition
+assignments. Some operating systems will not recognize an extended 
+partition scheme. The partitions you use with these operating systems 
+must be standard partitions.
+
+The Expert option of the Edit Partition Scheme dialog box allows you 
+to choose which slot will contain the extended partition, and which 
+of four slots will contain standard partitions. 
+
+The Select the extended partition scheme dialog box displays the 
+current extended partition scheme. The Partition section on the left 
+side of the dialog box shows the partition number, size, and range of
+each partition. The Extended Partition Range dialog box on the right 
+side of the dialog box allows you to choose which slot will contain 
+the extended partition scheme.
+
+The Extended Partition Range dialog box displays each slot's range of 
+partitions.
+
+In the example below, all four slots contain partition information. 
+The first slot contains partition one. The second slot contains the 
+extended partition, which is subdivided as partitions two through
+eight. The partitions included in the extended partition are always 
+highlighted. The third slot includes partition nine, and the fourth 
+slot contains partition ten. Slots one, three and four contain
+standard partitions.
+
+OTHER ADVANCED HARD DISK UTILITIES DISK FILES
+
+ù HDX.RSC is a GEM resource file used by HDX.PRG
+ù WINCAP is a text file that includes information used by HDX.PRG.
+ù HINSTALL.RSC is a GEM resource file used by HINSTALL.PRG.
+ù SHDRIVER.RAW is used with HINSTALL.PRG to create SHDRIVER.SYS, the 
+hard disk driver file that directs your system to start from a hard 
+disk.
+

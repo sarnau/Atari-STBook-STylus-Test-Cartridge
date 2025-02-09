@@ -1,0 +1,31 @@
+The latest official Atari Hard Drive Utilities. (v5.00, Dec. 3, 1991)
+Included are:
+
+HDX v5.00 - More compatible command set, should be able to format
+just about any drive you throw at it, including drives such as the
+Quantum "PULSE" drives. (WINCAP is now only required for ST506/412
+drives or SCSI drives connected through ACSI that HDX cannot determine
+through the "mode sense" commands, such as a Quantum 210s, due to the
+fact that the "Inquire Capacity" command uses all 8 bits of the
+command byte)
+
+AHDI/SHDRIVER v5.00 - Support for SCSI, ACSI, and IDE all rolled into
+one; also has the ability to scan all devices instead of continuing
+boot after no response from a unit (allows for non-contiguous devices
+numbers); displays drive information during boot-up.
+
+A version of the driver with the configuration bits set for
+non-contiguous devices and any-size Syquest cartridges is in the
+folder "ALLDRIVE" (which allows you to boot with no cart in the drive
+and be able to insert a 1 to 4 partition cart at anytime and read it,
+although the system will always reserve four drive letters for the
+removeable drives).
+
+Please use HINSTALL to install the new driver; _after_ the new driver
+is installed, you may copy the SHDRIVER.SYS from the \ALLDRIVE\
+folder to your boot drive and overwrite the installed one.
+
+AHDI/SHDRIVER DOES NOT SUPPORT THE ICD/SUPRA EXTENDED PARTITIONING
+SCHEME.
+
+

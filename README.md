@@ -489,12 +489,12 @@ The EEPROM can be access by writing to $FFA401 (Bit 5-7: DI, SCLK, CS) and readi
 | DIP  | Bit in $FFA501 | Description   |
 | ---- | ---- | ------------- |
 | 1    |  7   | unused |
-| 2    |  6   | 1:stop in an endless loop, if an error occurred instead of continuing with next test |
-| 3    |  5   | 1:sound check enabled |
+| 2    |  6   | 1:stop in an endless loop, if an error occurred instead of continuing with next test (ON position, allow to continue) |
+| 3    |  5   | 1:sound check disabled (OFF position, sound is playing) |
 | 4    |  4   | unused |
 | 5    |  3   | unused |
 | 6    |  2   | unused |
-| 7    |  1   | 1:after diagnostic test, stop into a mode to measure certain parameters |
+| 7    |  1   | 1:after diagnostic test, stop into a mode to measure certain parameters (ON position = endless tests) |
 | 8    |  0   | has to be off, wired to Function Button (SW3) |
 
 ## J2

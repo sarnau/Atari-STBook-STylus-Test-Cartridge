@@ -1,0 +1,9 @@
+
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+STBookDiagnosticTest/STBookDiagnosticTest-cache.lib
+STBookDiagnosticTest/fp-info-cache
+STBookDiagnosticTest/STBookDiagnosticTest-rescue.dcm
+Atari STBook Schematic/fp-info-cache
+Atari STBook Schematic/Atari STBook Schematic-cache.lib

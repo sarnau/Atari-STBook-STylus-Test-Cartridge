@@ -1,0 +1,159 @@
+
+
+                 ProCalc¿
+
+    Wissenschaftlicher Taschenrechner
+
+            Von John K. Brochu           fr Advanced Software
+
+       Copyright ½ 1991 Atari Corp.
+
+
+                Version 1.30
+             29. November 1991
+
+
+
+šber ProCalc
+
+ProCalc ist ein vollst„ndig ausgestatteter wissenschaftlicher Taschenrechner. Logarithmus-, Exponential-, Wurzel- und Potenzfunktion stehen ebenso zur Verfgung wie trigonometrische Funktionen fr Berechnungen in Grad und Radiant. ProCalc beherrscht aber auch Computerarithmetik mit Berechnung und Anzeige zu jeder gebr„uchlichen Basis (2/8/10/16), Sie k”nnen hier den Vorzeichentyp und die Wortgr”áe w„hlen (vorzeichenbehaftet/ vorzeichenlos, Byte/ Word/ Long) und mit bitweisen Operatoren arbeiten. Die Statusbits der CPU erscheinen in der Anzeige. Auáerdem ist ein Zeitanzeige-Modus vorhanden, der Berechnungen in Stunden, Minuten und Sekunden sehr vereinfacht. ProCalc besitzt 10 + 1 Zahlenspeicher, eine automatische Konstante und l„át bis zu 50 Klammerungsebenen zu.
+
+Ben”tigen Sie fr bestimmte Zwecke lediglich einen Rechner mit den vier Grundrechenarten, l„át sich ProCalc auch hierfr konfigurieren. Drcken Sie den Modus-Umschaltknopf rechts oben im ProCalc-Fenster. Er dient zum Wechseln zwischen der erweiterten und der Basiskonfiguration.
+
+Die aktuelle Konfiguration kann ber den Schalter [PREF] (Voreinstellungen) unten rechts auf dem Rechner gespeichert werden. Dabei wird der gerade aktive Modus (SCI/BIN/OCT/ DEC/HEX/HMS) und die Konfiguration (Basis-/erweiterte) gesichert, so daá ProCalc von nun an immer in der von Ihnen gewnschten Einstellung erscheint. Es ist auch m”glich, zugleich den Inhalt der Speicherregister zu retten, indem die [Shift]-Taste oder die rechte Maustaste zusammen mit dem Schalter [PREF] auf dem Rechner gedrckt wird. Die Konfigurationsdatei wird im Stammverzeichnis des Boot-Laufwerks abgelegt und tr„gt den Namen "PROCALC.INF".
+
+Beachten Sie bitte, daá ProCalc automatisch in den wissenschaftlichen Modus wechselt (SCI), wenn die Basiskonfiguration aktiviert wird.
+
+
+Die Tastaturbedienung
+
+Alle Schalter und Tasten von ProCalc k”nnen entweder mit der Maus oder von der Tastatur Ihres Atari-Computers aus bet„tigt werden. Wenn Sie wissen m”chten, wie die Tasten Ihres Computers den ProCalc-Tasten auf dem Bildschirm zugeordnet sind, drcken Sie den Schalter [?] oben rechts auf dem Rechner oder bet„tigen Sie die Taste [?] auf Ihrem Computer. Es erscheinen dann vorbergehend andere Tastaturbeschriftungen, die die Entsprechungen auf Ihrer Hardware-Tastatur angeben. Mssen Tasten zusammen mit der [Shift]-Taste gedrckt werden, erscheint ein kleines 's' davor; eine Kombination mit der [Control]-Taste wird durch das Caret ('^') gekennzeichnet. ^S bedeutet also [Control][S]; sF1 steht fr [Shift][F1]. Der numerische Ziffernblock funktioniert natrlich wie gewohnt. Die Tasten [Return] und [Enter] entsprechen dem [=] des Rechners auf dem Bildschirm.
+
+Einige Tasten sind mit einer zweiten Funktion belegt, die Sie mit der [Shift]-Taste oder mit gleichzeitig gedrckter rechter Maustaste aktivieren k”nnen. Dazu geh”ren z.B. der Schalter [D/R] (Grad/Radiant) und die Prozenttaste [%], alle Schalter zur Speicherbenutzung und der Schalter [SIZE] in den Computerarithmetik-Modi. Alle Funktionen sind im folgenden beschrieben.
+
+
+Numerische Eingabe und Anzeige
+
+Im wissenschaftlichen Modus besitzt die Anzeige eine 10-stellige Mantisse mit einem zweistelligen Exponenten. Im Coputerarithmetik-Modus werden maximal 16 Stellen angezeigt, jedoch nicht mehr Stellen als notwendig sind, um eine Zahl in der aktuellen Wortgr”áe darzustellen. Falls eine Zahl im Bin„rmodus (BIN) mehr als 16 Stellen aufweist, sind davon immer nur 16 Stellen gleichzeitig sichtbar. Sie k”nnen die Zahl aber mit den Pfeiltasten direkt unter der Anzeige verschieben und so die verborgenen Ziffern sehen. Ein kleines Pfeilsymbol unten links oder rechts in der Anzeige signalisiert die Richtung, in der noch weitere Stellen der Zahl zu finden sind.
+
+Bei der Zahleneingabe k”nnen Sie mit Hilfe der Taste [Backspace] oder dem enstprechenden Schalter unter der rechten Seite der Anzeige Korrekturen vornehmen. Es wird jeweils die letzte eingegebene Ziffer gel”scht. Auáerdem k”nnen Sie lange Zahlen durch Trennzeichen optisch gliedern. In den Modi SCI und DEC erscheinen dann Kommas, in den Modi BIN und HEX erscheinen Carets (^) unter der Zahl. Diese Markierungen k”nnen Sie mit [Shift][Backspace] ein- oder ausschalten.
+
+Der Schalter [CEC] (Clear Entry/Clear) l”scht bei der Eingabe die aktuell angezeigte Zahl oder nach Beendigung einer Operation den gesamten Rechner.
+
+Die gerade angezeigte Eingabe kann zu jeder Zeit in das Clipboard Ihres Systems kopiert werden. Dazu drcken Sie einfach den Schalter [COPY] unter der Anzeige und der bernommene Wert steht so fr eine weitere Bearbeitung in anderen Anwendungsprogrammen zur Verfgung.
+
+In allen Rechenmodi sind 50 Klamerungsebenen verfgbar, wobei die aktuelle Verschachtelungstiefe in der Mitte unter dem Anzeigebereich ausgegeben wird.
+
+
+Fehlermeldungen
+
+Es k”nnen verschiedene Fehlerbedingungen auftreten. Sie werden alle oben rechts in der Anzeige gemeldet:
+
+ DIV0    Versuchte Division durch
+         Null
+ NUM>>   Absolutbetrag des Ergeb-
+         nisses > 9.999999999E99
+ NUM<<   Absolutbetrag des Ergeb-
+         nisses < 1E-99
+ OVFWL   Bereichsberschreitung
+         einer Gleitkommazahl
+ UNFLW   Bereichsunterschreitung
+         einer Gleitkommazahl
+ INT>>   Ergebnis fr aktuelle
+         Wortgr”áe zu groá
+
+Der letzte Fall kann nur im Ganzzahl-Arithmetikmodus (INT) auftreten und ist nur als Warnung gedacht. Sie k”nnen zwar weiterrechnen, sollten sich aber darber im klaren sein, daá das Ergebnis fehlerhaft sein k”nnte. Bei allen anderen Fehlermeldungen muá die Taste [CEC] gedrckt werden, um die Fehlerbedingung zu beseitigen.
+
+
+Speicherfunktionen
+
+ProCalc besitzt fnf Speicherfunktionen: MC (Memory Clear, "Speichere Null im Speicher"), MX (Memory eXchange/ "Tausche den Inhalt der Anzeige mit dem des Speichers aus"), MRC (Memory Recall/ "Zeige den Speicherinhalt in der Anzeige"), MS (Memory Store/ "Speichere die Anzeige") und M+ ("Addiere die Anzeige zum Speicherinhalt dazu").
+
+Zus„tzlich zu diesem normalen Speicher fr eine Zahl besitzt ProCalc einen Speicher fr zehn weitere Zahlen. Sie k”nnen auf diese Speicher zugreifen, wenn Sie die rechte Maustaste oder die Taste [SHIFT] gleichzeitig mit einer Speichertaste anw„hlen. Die Speichertaste wird dann "arretiert" (sie erscheint hervorgehoben) und Sie k”nnen dann ber eine der Zifferntasten [0]-[9] bestimmen, welche Speicherzelle angesprochen werden soll.  Wenn Sie eine arretierte Speichertaste gleichzeitig mit [SHIFT] drcken (anstatt eine Zifferntaste zu drcken), so wird die Funktion auf alle zehn Unterspeicher gleichzeitig angewandt. Die Tasten [MX] und [MR] funktionieren hier natrlich nicht, da ja immer nur eine Zahl in der Anzeige erscheinen kann. Alle anderen Tasteneingaben haben keinen Einfluá auf die gew„hlte Funktion.
+
+ProCalc besitzt fr jeden Speicher oben links im Anzeigebereich einen Statusindikator, der aufleuchtet, sobald der Speicherinhalt ungleich Null ist (M fr den Hauptspeicher und 0 - 9 fr die Zusatzspeicher).
+
+Alle Speicherinhalte k”nnen mit der gegenw„rtigen Einstellung des Rechners gesichert werden, indem man die Tasten [PREF] und [SHIFT] gleichzeitig drckt. Die Speicherinhalte stellen sich dann bei einem neuen Systemstart so wie zum Zeitpunkt der Sicherung ein.
+
+
+Automatische Konstante
+
+Die automatische Konstante erlaubt es Ihnen, wiederholte Berechnungen mit einer gemeinsamen Zahl und einem gemeinsamen Operator auszufhren. Die Konstante wird immer dann gesetzt, wenn eine Operation mit zwei Zahlen durch die Taste [=] abgeschlossen wird. Damit wird die zuletzt eingegebene Zahl und der Operator als automatische Konstante gespeichert. Sie k”nnen dann eine neue Zahl eintippen und die Taste [=] drcken; ProCalc fhrt nun automatisch die Rechnung mit der gespeicherten Konstante und dem Operator aus. Sie k”nnen die automatische Konstante aber auch mehrfach auf die Anzeige anwenden, indem Sie mehrmals [=] drcken. Die automatische Konstante wird durch die Taste [CEC] oder durch Wechseln des Rechenmodus gel”scht.
+
+
+Die Rechenmodi von ProCalc
+
+ProCalc kann in drei verschieden Modi arbeiten: im wissenschaftlichen, im Zeitmodus und im Computerarithmetik-Modus. Die obere Tastenreihe ber der Anzeige dient dazu, in einen anderen Modus berzugehen. Wenn Sie den Modus wechseln, ver„ndert  sich das ProCalc-Tastenfeld entsprechend dem aktuell zur Verfgung stehenden Funktionsumfang. Der Anzeigeinhalt bleibt davon jedoch unberhrt, wodurch es m”glich wird, gemischte Berechnungen durchzufhren oder die Zahlendarstellung auf eine neue Basis zu beziehen. Fr die Speicherinhalte gilt dasselbe; bei der Ausgabe wird automatisch das geeignete Zahlenformat gew„hlt.
+
+
+Der wissenschaftliche Modus
+
+Diese wissenschaftlichen Rechenfunktionen stehen Ihnen im Modus SCI zur Verfgung:
+
+ ln    Natrlicher Logarithmus 
+ eü    Exponentialfunktion 
+ log   Logarithmus zur Basis 10 
+ 10ü   Inverser Logarithmus zur
+       Basis 10 
+ nı    Quadratfunktion 
+ ûü    Wurzelfunktion Yn    
+ n     n-te Potenz von Y 
+ 1/n   Reziprokwert von n 
+ %     Prozent, Deltaprozent
+
+Die Prozentfunktion arbeitet mit den Tasten [+], [-], [*], [/] oder alleine. Es sind folgende Operationen m”glich:
+
+ X+Y%=         Prozentualer Aufschlag
+               (X plus Y% von X) 
+ X-Y%=         Rabatt (X minus Y% von 
+               X) 
+ X*Y%=         Prozentanteil (Y% von X)  X/Y%=         Prozentuales Verh„ltnis
+               (X ist wieviel % von Y) 
+ X%            Prozent in dezimaler
+               Umrechnung 
+ X%Y=          Deltaprozent ((X/Y - 1)
+               * 100%)
+
+Die Deltaprozentfunktion wird durch Drcken der Tasten [SHIFT] und [%] aktiviert und berechnet den prozentualen Unterschied zweier Werte in Bezug auf den zweiten Wert.
+
+Die sechs Tasten ber den Zifferntasten sind fr trigonometrische Funktionen zust„ndig. Die Tasten [HYP] und [ARC] sind "Feststelltasten", die dazu benutzt werden, hyperbolische (HYP) und inverse (ARC) trigonometrische Funktionen auszufhren. Wenn Sie zum Beispiel den hyperbolischen Arcussinus einer Zahl berechnen wollen, so drcken sie die Tasten [HYP] und [ARC] vor der Taste [SIN]. Die Tasten [ARC] und [HYP] arbeiten nur in Verbindung mit [SIN],[COS] und [TAN]. Wenn Sie irgendeine andere Taste drcken, w„hrend Sie [ARC] oder [HYP] festgestellt haben, so passiert nichts.
+
+Winkel k”nnen Sie sowohl in Grad als auch in Radiant eingeben, anzeigen und ineinander umwandeln, indem Sie die Taste [D/R] links unter der Anzeige zu Hilfe nehmen. Genau ber dieser Taste wird der Winkelmodus angezeigt. Dieser Modus wird bei allen trigonometrischen Berechnungen verwendet, sowohl bei der Eingabe als auch bei der Ausgabe von Ergebnissen. Wenn Sie den Modus wechseln wollen, ohne die Anzeige zu ver„ndern, mssen Sie [D/R] gleichzeitig mit der Taste [SHIFT] oder der rechten Maustaste drcken.
+
+M”chten Sie Zahlen in wissenschaftlicher Notation eingeben, so geben Sie zuerst die Mantisse ein, dann drcken Sie die Taste [EE] (Enter Exponent) und tippen den Exponenten (-99...99) ein. ProCalc besitzt einen intelligenten Prozessor fr die Anzeige. Deshalb werden Ergebnisse nur dann in wissenschaftlicher Notation anstelle der blichen dezimalen ausgegeben, wenn die wissenschaftliche Anzeige genauer ist.
+
+
+Computerarithmetik-Modus
+
+In jedem der Computerarithmetik-Modi k”nnen der Zahlentyp (vorzeichenbehaftet/vorzeichenlos) mit dem Schalter [SIGN] und die Wortgr”áe mit dem Schalter [SIZE] eingestellt werden. Die Wortgr”áen sind: Byte (8 Bits), Word (16 Bits) oder Long (32 Bits). Die Gr”áe wechselt in der Reihenfolge B-> W-> L, wenn Sie [SIZE] bet„tigen und umgekehrt in der Reihenfolge L-> W-> B, wenn Sie zus„tzlich die [Shift]-Taste gedrckt halten. Die gew„hlte Wortgr”áe und das aktuelle Vorzeichen werden in der Anzeige unten links dargestellt. Als Folge bestimmter Rechenoperationen kann die angezeigte Zahl das Vorzeichen wechseln oder abgeschnitten werden. Im letzteren Fall erscheint im oberen Teil der Anzeige eine Fehlermeldung, nach der Sie aber weiterrechnen k”nnen, wenn Sie m”chten und eine eventuelle Verf„lschung des Ergebnisses in Kauf nehmen wollen. Die folgenden Computerarithmetik-Funktionen stehen nur in den Modi BIN/HEX/OCT/DEC zur Verfgung:
+
+ ROR          Rotieren nach rechts 
+ ROL          Rotieren nach links 
+ ASL/ LSL     Arithmetisches/
+              Logisches Linksschieben 
+ ASR/ LSR     Arithmetisches/
+              Logisches Rechtsschieben 
+ NOT          Einserkomplement 
+ NEG          Zweierkomplement 
+ AND          Bitweise UND-Verknpfung
+ OR           Bitweise ODER-Verknpfung 
+ XOR          Bitweise EXCLUSIV-ODER-
+              Verknpfung 
+ MOD          Modulodivision (Teilen
+              mit Rest)
+
+
+Beachten Sie, daá die Operationen ASL/ASR nur im Modus "Mit Vorzeichen" funktionieren, die Operationen LSR/LSR nur im Modus "Ohne Vorzeichen". (Die Stellung des Schalters [SIGN] wird durch ein "S" oder ein "U" unten links im Anzeigefeld gekennzeichnet.)
+
+Alle Operationen in diesem Modus (bis auf die unten angegebenen) fhren direkt die entsprechenden CPU-Befehle aus, rufen dann die CPU-Statusregister ab und geben deren Codes oben rechts in der Anzeige aus. Multiplikation, Division und die Modulodivision werden mit Gleitkommaarithmetik bearbeitet, dann wird deren Ergebnis in ein Datenregister kopiert, und die resultierenden Statuscodes werden berprft und ausgegeben. Folgende Statuscodes werden angezeigt: 
+
+ C   Carry       (šbertrag)
+ V   oVerflow    (Ergebnis zu groá)
+ Z   Zero        (Ergebnis ist Null)
+ N   Negative    (Das h”chstwertige
+                  Bit ist gesetzt)
+
+
+Zum Schluá noch etwas besonderes
+
+Vielleicht wollten Sie schon einmal Ihre Lieblingslieder auf Kassette aufnehmen und wollten dazu die Gesamtspielzeit der Lieder wissen. ProCalc kann Ihnen auch dabei von Nutzen sein. W„hlen Sie mit der Taste [HMS] den Zeitmodus und geben Sie die Spielzeit jedes einzelnen Liedes in Minuten und Sekunden (MM:SS) ein. ProCalc berechnet das Ergebnis und zeigt es Ihnen im gleichen Format an. Sie k”nnen Zeiten auch in jedem beliebigen Format eingeben. Sie mssen nur Stunden, Minuten und Sekunden durch einen Doppelpunkt oder ein Leerzeichen trennen. Wenn Sie zum Beispiel "185:" eingeben, so liest der Rechner dies als "185 Minuten, 0 Sekunden",  oder "3:05:00". Zeiten werden intern in Sekunden gespeichert. Wenn Sie nun in einen anderen Modus (zum Beispiel SCI) wechseln, so wird dann die eingegebene Zeit in Sekunden angezeigt.

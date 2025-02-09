@@ -1,0 +1,113 @@
+**********************************************************
+Informationen zum Festplattentreiber
+**********************************************************
+
+1. Installation des Festplattentreibers
+Das Programm "HINSTALL.PRG" installiert und entfernt den 
+Plattentreiber. Der Plattentreiber dient dazu, von der 
+Platte zu booten, also beim Start die Programme im AUTO- 
+Ordner, Accessories und die Datei "Desktop.Inf" von der 
+Platte zu lesen.
+Es folgt eine Installationsanleitung:
+>Starten Sie das Programm "HINSTALL.PRG".
+>W„hlen Sie im Men "FILE" die Option "Install".
+>W„hlen Sie im folgenden Dialog Ihre Partition, die Sie 
+fr den Bootvorgang pr„ferieren. Hierbei sind nur ange- 
+meldete Partitionen ausw„hlbar.
+>W„hlen Sie im folgenden Dialog den OK- oder Abbruch-But- 
+ton an.
+
+2. Plattentreiber entfernen
+>Starten Sie "HINSTAL.PRG".
+>W„hlen Sie im Men "FILE" die Option "Remove" aus.
+>W„hlen Sie im folgenden Dialog Ihre Bootpartition aus.
+>Klicken Sie auf "OK" um den Festplattentreiber zu ent- 
+fernen oder brechen Sie den Vorgang mit "Abort" ab.
+
+3. Plattentreiber umgehen
+Wenn Sie nicht mehr von der Platte booten wollen, k”nnen 
+Sie einerseits den Plattentreiber von der Platte entfer- 
+nen. Sie k”nnen Ihn aber auch einfach beim Start Ihres 
+Systems umgehen. Dazu schalten Sie zun„chst Ihren Rechner 
+aus (oder drcken [CONTROL],[ALTERNATE],[SHIFT r.] und 
+[DELETE]) => Kaltstart. Vergewissern Sie sich, daž im 
+eingebauten Diskettenlaufwerk keine Diskette liegt, in 
+deren AUTO-Ordner der Plattentreiber zu finden ist. 
+Schalten Sie nun Ihr System wieder an. Die Leuchtdiode des 
+Diskettenlaufwerks leuchtet kurz auf und erlischt wieder. 
+Drcken Sie nun sofort auf [ALTERNATE]. Lassen Sie die 
+Taste wieder los, sobald die Laufwerksleuchte wieder auf- 
+leuchtet.
+
+4. Festplattenprobleme
+
+a. Desktop erscheint nicht
+Die Ursache k”nnte ein fehlerhaftes Accessory sein.
+>Schalten Sie den Computer aus.
+>Warten Sie 10 Sekunden.
+>Legen Sie eine Diskette in Laufwerk A ein. Nehmen Sie 
+dazu keinesfalls eine Originaldiskette mit unersetzlichen 
+Daten.
+>Schalten Sie das System ein.
+>Drcken Sie [ALTERNATE], sobald die Arbeitsanzeige des 
+Diskettenlaufwerks aufleuchtet. Halten Sie [ALTERNATE] 
+gedrckt, bis die Lampe wieder erloschen ist. Nun sollte 
+das Standard-Desktop zu sehen sein.
+>šberlegen Sie nun, ob Sie das System von Diskette oder 
+von der eingebauten Festplatte starten. 
+Im ersten Fall brauchen Sie nur Ihre Startdiskette einzu- 
+legen und die entsprechende Accessorydatei zu entfernen.
+Ansonsten verfahren Sie wie folgt:
+>Legen Sie eine Sicherheitskopie der ATARI-Diskette mit 
+dem Titel "Harddisc-Utilities" ein.
+>™ffnen Sie den Ordner namens "AUTO" und starten Sie das 
+Programm "AHDI.PRG".
+>Melden Sie jetzt im Desktop mithilfe des gleichnamigen 
+Menpunktes alle Laufwerke an.
+>™ffnen Sie das Wurzelverzeichnis von Laufwerk C.
+>Benennen Sie die in Frage kommenden Accessorydateien um. 
+Accessories werden nur dann als solche erkannt und gela- 
+den, wenn ihre Namenserweiterung ".ACC" ist.
+>L”sen Sie nun einen Kaltstart aus.
+
+b. Symbol fr Laufwerk C erscheint nicht auf dem Desktop
+>Wenn Sie das System von Diskette starten, mssen Sie 
+darauf achten, daž sich im AUTO-Ordner der Startdiskette 
+das Programm "AHDI.PRG" befindet.
+>Wenn Sie das System von Festplatte starten, ist unter 
+Umst„nden eine neue Installation der Festplattensoftware 
+vonn”ten.
+
+c. Der Systemstart von Festplatte funktioniert nicht
+>Versuchen Sie, den Festplattentreiber neu zu installie- 
+ren. Dazu ben”tigen Sie das Programm "HINSTALL.PRG".
+
+5. Ersetzen bzw. L”schen von defekten Daten
+
+Wenn die Probleme weiterbestehen, kann das an defekten 
+Daten auf der Festplatte liegen. Defekte Daten erkennt man 
+an Dateien, die Schrott enthalten oder die sich gar nicht 
+mehr bearbeiten lassen. Versuchen Sie zun„chst, solche 
+Dateien zu l”schen und durch intakte Kopien zu ersetzen.
+Hilft das alles nicht, sollten Sie die Diskette "Advanced 
+Harddisc Utilities" zuhilfe nehmen:
+>Aktivieren Sie im HDX die Menoption "MARKBAD" und folgen 
+Sie den Dialogen. Fhren Sie diesen Schritt fr jedes 
+Laufwerk durch, das m”glicherweise defekte Daten enth„lt.
+>Kopieren Sie alle Dateien der betreffenden Laufwerke auf 
+frisch formatierte Disketten.
+>L”schen Sie den Inhalt der betreffenden Partition mit 
+"ZERO-PARTITION".
+>Starten Sie erneut "MARKBAD". Die Laufwerke sind jetzt 
+wieder v”llig leer.
+>Kopieren Sie Ihre Daten von Diskette wieder auf die 
+bearbeiteten Laufwerke.
+
+
+
+Ihre ATARI-Corporation
+ATARI-Deutschland GmbH
+Taunusstein, 23.08.1992
+
+(p)/(c) 1992
+ATARI Computer GmbH

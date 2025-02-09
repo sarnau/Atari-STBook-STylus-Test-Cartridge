@@ -1,0 +1,84 @@
+****************************************************************
+Definitionen zur "Advanced-Harddisc-Utility" Diskette
+****************************************************************
+
+1. Der Aufbau des HDX-Ordners
+
+>"HDX.RSC" ist eine GEM-Resource-Datei, die zu HDX.PRG gehîrt.
+>"WINCAP" ist eine Textdatei, die Informationen fÅr HDX.PRG 
+enthÑlt. Dies sind Daten, die zum Formatieren und Partitionieren 
+benîtigt werden.
+>"HDX.PRG" ist das Programm selber. Es bietet Mîglichkeiten, die 
+Festplatte zu formatieren, Festplattenpartitionen einzurichten, 
+den gesamten Inhalt einer Partition zu lîschen, beschÑdigte 
+Laufwerksektoren aufzuspÅren und zu markieren.
+
+2. Der Aufbau des HINSTALL-Ordners
+
+>"HINSTALL.RSC" ist eine GEM-Resource-Datei, die zu HINSTALL.PRG 
+gehîrt.
+>"SHDRIVER.SYS" ist der Festplattentreiber, der einen System- 
+start von der Festplatte ermîglicht. Diese Datei veranlaût, von 
+der Festplatte zu booten, also beim Start die Programme im Au- 
+to-Ordner, Accessories und die Datei "DESKTOP.INF" - die zusam- 
+men auf der ersten Verzeichnisebene Ihres Bootlaufwerks liegen 
+mÅssen - von der Platte zu lesen. öblicherweise befinden sich 
+der AUTO-Ordner, Accessories und die "DESKTOP.INF" auf der 
+Bootpartition der Festplatte, also dem logischen Laufwerk, auf 
+dem "SHDRIVER.SYS" installiert wurde. Soll Laufwerk C das Boot- 
+laufwerk sein, wÅrden Sie also keinen Erfolg haben, wenn sich 
+z.B. wichtige Bootprogramme in einem AUTO-Ordner in Laufwerk E 
+befinden, da "SHDRIVER.SYS" nicht in entfernten Laufwerken nach 
+bootfÑhigen Dateien sucht. Bei der Konfiguration Ihrer ATARI- 
+Computeranlage empfehlen wir, das gesamte Bootsystem auf Lauf- 
+werk C zu installieren.
+>"SHDRIVER.RAW" wird von "HINSTALL.PRG" verwendet, um auf der 
+Festplatte die Datei "SHDRIVER.SYS" zu erzeugen.
+>"HINSTALL.PRG" ist das Programm selber. Es bietet die Mîglich- 
+keiten, den Festplattentreiber "SHDRIVER.SYS" auf einer belie- 
+bigen Festplattenpartition zu installieren oder zu entfernen.
+>"AHDI.PRG" ist ein Harddisc-Treiberprogramm, das beim System- 
+start von einem Diskettenlaufwerk (Bootlaufwerk=A) vorhanden 
+sein muû, wenn eine Festplatte angeschlossen ist und man auf 
+deren gespeicherter Daten wÑhrend der Arbeit nicht verzichten 
+mîchte. "AHDI.PRG" sorgt dafÅr, daû das System die Harddisc er- 
+kennt und als Laufwerk C auf den Monitor bringt.
+Damit also das System den Anschluû der Harddisc erkennt, muû 
+beim Systemstart von Diskette "AHDI.PRG" im AUTO-Ordner der 
+Diskette stehen.
+
+
+**************************************************************** 
+ATARI-Terminologie der Laufwerke
+****************************************************************
+
+1. physikalische Laufwerke/Einheiten
+Die gesamte Festplatte. Jede an Ihr Computersystem angeschlos- 
+sene Festplatte bildet eine eigene Einheit.
+
+2. logisches Laufwerk = Partitionen
+Speichereinheiten, die beim Partitionieren (Aufteilen) erstellt 
+werden. Jede Einheit wird als eigenes Laufwerk mit eigener Ken- 
+nung behandelt, wenn es vom GEM-Desktop aus mit einem Buchstaben 
+angemeldet wurde.
+
+3. Bootlaufwerk
+Das Laufwerk, auf der sich die "SHDRIVER.SYS" Datei und bootfÑ- 
+hige Dateien wie ACC's, Programme im AUTO-Ordner und das 
+"DESKTOP.INF" befinden. Laufwerk A kann auch bei angeschlossener 
+Festplatte das Bootlaufwerk sein, sofern sich im AUTO-Ordner der 
+Diskette das Programm "AHDI.PRG" befindet.
+
+4. Laufwerk
+Ist schlicht von Laufwerken die Rede, sind damit die Partitionen 
+einer Festplatte gemeint.
+
+5. Wurzelverzeichnis
+Dies ist das erste Verzeichnis das erscheint, wenn Sie im Desk- 
+top ein Laufwerk îffnen.
+
+
+*******************
+ATARI-Computer GmbH
+(c)/(p) 1992
+*******************

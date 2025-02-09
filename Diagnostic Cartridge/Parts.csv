@@ -1,0 +1,40 @@
+Designator;Package;Part Markings;Park Number/Value;Label
+U1;DIP28;27C256-15;Pin 1 is wired for a 27C512;STBook 0.65 91.10.03 O
+U2;DIP28;27C256-15;Pin 1 is wired for a 27C512;STBook 0.65 91.10.03 E
+U3;DIP28;JAPAN 9126 HM62256LP-10 R4057310;32,768-word × 8-bit High Speed CMOS Static RAM;
+U4;DIP28;JAPAN 9126 HM62256LP-10 R4057310;32,768-word × 8-bit High Speed CMOS Static RAM;
+U5;DIP20;PAL 16L8;;BiIO2 V8 $34BA
+U6,U13;DIP20;TOSHIBA 9123H 74HCT244AP JAPAN;Octal Buffers and Line Drivers With 3-State Outputs;
+U7,U8,U12;DIP20;TI K041DS96 SN74HCT374N;Octal D-Type Transparent Latches and Edge-Triggered Flip-Flops;
+U9;DIP20;PAL 16L8;;BiMEM3 L8 $238E
+U10;DIP14;TI J005LN78 SN74HC05N;Hex Inverters With Open-Drain Outputs;
+U11;DIP8;M9106 LM 555CN;LM555 Timer;
+U14;DIP8;HY 93C46 8927;64x16-Bit CMOS Serial EEPROM;
+Q1,Q2;;n/a;n/a;not populated
+DX1,DX2;;S GL9P156 4;14.22-mm (0.56-in.) LED seven-segment display;
+D1;;;L-53G - 5mm green LED;
+D2;;;L-53Y - 5mm yellow LED;
+D3;DO-35;;1S1588 - Silizium Diode Toshiba;
+SW1;;;;POWER
+SW2;;;;RESET
+SW3;;;;FUNCTION
+SW4;DIP16;FUJISOKU 17;;
+TP1;;;;CLK16
+TP2;;;;HZ500
+TP3;;;;ECLK
+TP4;;;;CLK8
+J1;Micro-D 1205;;120-pin Expansion Port Atari ST Book, 2.54mm, 30x4;
+J2;;;5x2 PIN, 2.54mm, Through Hole, Straight;
+RP1;SIP9;RMLS8103J;Resistor Network, Bussed, 10kΩ, 5%;
+RP2, RP3;DIP16;898-3-R470;470Ω;
+R1,R2;;470Ω, 1/8W;;
+R3;;10KΩ, 1/8W;;
+R4;;12KΩ, 1/8W;;
+R5,R6;;100KΩ, 1/8W;;
+R7;;2.2KΩ, 1/8W;;
+C1;;47μF 16V 85℃;Radial, Electrolytic;
+C2-C12,C16-C18;;104Z 25V;100nF, 25V;
+C13;;10μF 16V 85℃;Radial, Electrolytic;
+C14;;103M 50V;10nF, 50V;
+C15;;22μF 16V 85℃;Radial, Electrolytic;
+L1, L2;;;Ferrite Bead;
