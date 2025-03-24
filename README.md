@@ -456,9 +456,9 @@ It also has a HY93C46 (an MICROWIRE EEPROM 1K BIT 64x16 bit), which I have no id
 
 The EEPROM can be access by writing to $FFA401 (Bit 5-7: DI, SCLK, CS) and reading from $FFA401 (Bit 0: DO)
 
-![Atari STBook/STylus Diagnostic Board Top View](./Photos/TestCartridgeTop.jpg)
+![Atari STBook/STylus Diagnostic Board Top View](./Various_Photos/TestCartridgeTop.jpg)
 
-![Atari STBook/STylus Diagnostic Board Bottom View](./Photos/TestCartridgeBottom.jpg)
+![Atari STBook/STylus Diagnostic Board Bottom View](./Various_Photos/TestCartridgeBottom.jpg)
 
 ## Testpoints
 

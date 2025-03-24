@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name STBookDiagnosticTest-rescue)(type Legacy)(uri ${KIPRJMOD}/STBookDiagnosticTest-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "STBookDiagnosticTest-rescue")(type "KiCad")(uri "${KIPRJMOD}/STBookDiagnosticTest-rescue.kicad_sym")(options "")(descr ""))
 )
